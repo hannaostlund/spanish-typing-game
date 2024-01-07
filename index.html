@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://use.typekit.net/kvn3kbh.css">
+    <title>Spanish Spelling Game</title>
+  </head>
+  <body>
+    <button id="settings-btn" class="settings-btn">
+      <i class="fas fa-cog"></i>
+    </button>
+
+    <div id="settings" class="settings">
+      <form id="settings-form">
+        <div>
+          <label for="difficutly" class="difficulty">Difficulty:</label>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="flex-container">
+      <div class="heading-container">
+        <div class="heading">¡buenas!</div>
+        <img src="images/fan.svg" alt="vintage sun" class="sun-image">
+        <!--<<img src="images/sun.svg" alt="vintage sun" class="sun-image">-->
+        <div class="instructions">Master your Spanish and spell correctly to earn a point. If you take too long, you will fail. ¡Buena Suerte!</div>
+      </div>
+
+    <div class="container">
+      <!--<h2>Spanish spelling Game</h2>-->
+      <div class="small-text">Spell the following Spanish words:</div>
+
+      <h1 id="word"></h1>
+
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="Type the word here..."
+      />
+
+      <p class="time-container">Time left: <span id="time">10s</span></p>
+
+      <p class="score-container">Score: <span id="score">0</span></p>
+
+      <div id="end-game-container" class="end-game-container"></div>
+    
+    </div>
+    <script src="script.js"></script>
+    </div>
+  </body>
+</html>

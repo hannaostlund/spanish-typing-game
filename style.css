@@ -173,3 +173,26 @@ input {
   height: 100%;
   z-index: 1;
 }
+
+  /* Adjustments for smaller screens */
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.8em; 
+  }
+
+  .container,
+  .heading-container {
+    width: 80%; 
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    right: auto;
+  }
+
+  .heading {
+    font-size: 4em; 
+  }
+
+}

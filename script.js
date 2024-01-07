@@ -130,7 +130,7 @@ text.addEventListener("input", (event) => {
     //time += 5;
 
     if (difficulty === "hard") {
-      time =+ 2; 
+      time += 2; 
     } else if (difficulty === "medium") {
       time += 3;
     } else {
